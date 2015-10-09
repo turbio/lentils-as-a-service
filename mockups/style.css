@@ -4,6 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    color: white;
+}
+
 #top-section{
     height: 100%;
 }
@@ -45,7 +49,7 @@ body{
     left: -1em;
     right: 0em;
     bottom: -1em;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
@@ -85,6 +89,20 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .8);
 }
 
+.button-clear{
+    box-shadow: none;
+    background: none;
+}
+
+.button-clear:hover{
+    box-shadow: none;
+    background: rgba(255, 255, 255, .1);
+}
+
+.right-button{
+    margin-left: auto;
+}
+
 .centered-button-wrapper{
     margin-top: 1em;
     width: 100%;
@@ -108,36 +126,40 @@ body{
     text-decoration: none;
 }
 
-#more-info{
+.page-section{
     position: relative;
     width: 100%;
-    background: #82a579;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#more-info{
+    background: #82a579;
 }
 
 .info-item{
     margin: 1em;
     text-align: center;
-    width: 8em;
+    width: 9em;
     font-size: 1.5em;
     color: #fff;
 }
 
-.page-quote{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+#page-quote{
+    background: rgba(255, 255, 255, .6);
 }
 
 .info-item-icon{
-    width: 100%;
+    width: 50%;
 }
 
 .quote{
     font-weight: 100;
     max-width: 50em;
+    margin: 1em;
 }
 
 .quote-text{
@@ -146,12 +168,10 @@ body{
 }
 
 .quote-text:before{
-    vertical-align: super;
     content: "\201C";
 }
 
 .quote-text:after{
-    vertical-align: super;
     content: "\201D";
 }
 
@@ -160,8 +180,25 @@ body{
     font-size: 2em;
 }
 
+table, tr, td, th{
+    border-style: solid;
+    border: 1px;
+}
+
+tr:nth-child(odd){
+    background: #fff;
+}
+
+tr:nth-child(even){
+    background: #eee;
+}
+
 .quote-attrib:before{
     content: "-";
+}
+
+#page-pricing{
+    background: white;
 }
 
 #footer{
