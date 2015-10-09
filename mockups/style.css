@@ -124,10 +124,49 @@ body{
     font-size: 1.5em;
 }
 
+.page-quote{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .info-item-icon{
     width: 100%;
 }
 
+.quote{
+    font-weight: 100;
+    max-width: 50em;
+}
+
+.quote-text{
+    font-size: 4em;
+    text-align: center;
+}
+
+.quote-text:before{
+    vertical-align: super;
+    content: "\201C";
+}
+
+.quote-text:after{
+    vertical-align: super;
+    content: "\201D";
+}
+
+.quote-attrib{
+    text-align: right;
+    font-size: 2em;
+}
+
+.quote-attrib:before{
+    content: "-";
+}
+
 #footer{
     height: 5em;
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
 }
