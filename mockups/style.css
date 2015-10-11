@@ -37,10 +37,9 @@ a{
 }
 
 .background-image{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bg_lentils.jpg);
-    background-position: left;
-    /*filter: blur(5px);
-    -webkit-filter: blur(5px);*/
+    /*background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bg_lentils.jpg);*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bg_blur02.jpg);
+    background-position: center;
     
     /*width: 100%;
     height: 100%;*/
