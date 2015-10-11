@@ -136,6 +136,15 @@ a{
     padding-bottom: 4em;
 }
 
+.page-section-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    font-weight: 200;
+    margin: .25em;
+}
+
 #more-info{
     background: #82a579;
 }
@@ -180,9 +189,22 @@ a{
     font-size: 2em;
 }
 
-table, tr, td, th{
-    border-style: solid;
-    border: 1px;
+table{
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+td{
+    text-align: right;
+}
+
+tr{
+    height: 2em;
 }
 
 tr:nth-child(odd){
