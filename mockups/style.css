@@ -329,3 +329,15 @@ hr{
 .plain-input:hover{
     background: #eee;
 }
+
+.account-error{
+    padding: .5em;
+    border-style: none;
+    border-radius: 5px;
+    background: rgba(255, 177, 0, 0.78);
+    border-color: rgba(255, 245, 0, 0.91);
+}
+
+.account-error:before{
+    content: "error: ";
+}
