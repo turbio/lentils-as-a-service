@@ -425,3 +425,37 @@ hr{
 .article-button{
     margin-left: auto;
 }
+
+.order-item{
+    font-family: monospace;
+    font-size: .7em;
+    background: white;
+    padding: 1em;
+    display: inline-block;
+    width: 80%;
+    margin: .5em;
+}
+
+.order-item:before{
+    content: "\2192";
+}
+
+.order-amount-calc{
+    display: inline-block;
+    padding: 0.25em;
+    border-radius: 5px;
+}
+
+.order-amount-positive{
+    background: #73ff52;
+}
+.order-amount-positive:before{
+    content: "-";
+}
+
+.order-amount-negative{
+    background: #ff5252;
+}
+.order-amount-negative:before{
+    content: "+";
+}

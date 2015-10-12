@@ -64,6 +64,40 @@
             <input class="plain-input" type="submit" value="next">
         </form>
     </div>
+    <div class="page-article">
+        <div class="page-article-title">Confirm Order #order-name</div>
+        <div class="order-item">
+            you will recieve {number_of_letils} lentils per {re_occur}
+            <br/>
+            that's { lph } lentils per hour,
+            <br/>
+            { lpd } lentils per day,
+            <br/>
+            and, { lpm } lentils per month
+        </div>
+        <div class="order-amount-calc order-amount-negative">123</div>
+        <br/>
+        <div class="order-item">you will be charged { amount_per } { currency}</div>
+        <div class="order-amount-calc order-amount-positive">123</div>
+        <br/>
+        <div class="order-item">this payment will be placed {in full when your lentils ship | when you start earning lentils at the specified interval}</div>
+        <div class="order-amount-calc order-amount-negative">123</div>
+        <br/>
+        <div class="order-item">{you can cash-out anytime you want | you will not be able to cash-out}</div>
+        <div class="order-amount-calc order-amount-positive">123</div>
+        <br/>
+        <div class="order-item">your lentils will be shipped automeatically when you have { cashout_amout }</div>
+        <div class="order-amount-calc order-amount-negative">123</div>
+        <br/>
+        <div class="order-item">shipping to { shipping_address }</div>
+        <div class="order-amount-calc order-amount-positive">123</div>
+        <br/>
+        <div class="order-item">paying with { payment_method }</div>
+        <div class="order-amount-calc order-amount-negative">123</div>
+        <form action="/dash/" method="POST">
+            <input class="plain-input" type="submit" value="confirm order"/>
+        </form>
+    </div>
      <div class="page-article">
         <div class="page-article-title">Account</div>
     </div>
