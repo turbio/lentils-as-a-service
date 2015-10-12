@@ -296,3 +296,19 @@ hr{
     background: white;
     padding: 1em;
 }
+
+#lentil-cam{
+    width: 100%;
+    height: 480px;
+    background: black;
+    color: white;
+}
+
+#lentil-cam-controls{
+    text-align: center;
+}
+
+.lentil-cam-control-button{
+    border: 0;
+    font-size: 1.5em;
+}
