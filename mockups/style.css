@@ -312,3 +312,20 @@ hr{
     border: 0;
     font-size: 1.5em;
 }
+
+.plain-input{
+    margin: .5em;
+    padding: .25em;
+    border: none;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, .5);
+    font-size: 1em;
+    background: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    
+    transition: background .3s;
+}
+
+.plain-input:hover{
+    background: #eee;
+}
