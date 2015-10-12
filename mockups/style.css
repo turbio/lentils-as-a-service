@@ -133,7 +133,7 @@ a{
     position: relative;
     width: 100%;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 4em;
     padding-bottom: 4em;
