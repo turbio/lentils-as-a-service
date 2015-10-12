@@ -7,12 +7,63 @@
    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <div class="dash-background"></div>
     <a name="top"></a>
-	<div id="title-bar">
+	<div class="dashify" id="title-bar">
 		<img src="logo.svg" id="title-bar-logo"/>
-		<div id="title-bar-text">Lentils as a Service</div>
-        <a href="/signup" class="link-button button-clear right-button">signin</a>
+		<div class="dashify" id="title-bar-text">Lentils as a Service</div>
+        <div class="dashify right-button">user name</div>
+        <a href="/signup" class="dashify link-button button-clear">signout</a>
     </div>
-    aaaaaaaaaaa
+    <div class="page-article">
+        <div class="page-article-title">Status</div>
+        <div class="lentil-bar">
+            <div class="lentil-progress" style="width: 50%;">50%</div>
+            <form action="/dash/" method="POST">
+                <input type="submit" value="cash out" name="cashout" class="cashout-button"/>
+            </form>
+        </div>
+        <div>currently earning %s lentils per second</div>
+        <div>you're paying %s every %s</div>
+        <div>you have earned %s lentils so far</div>
+        <div>your lentils will be shipped whenever you have %s lentils</div>
+    </div>
+    <div class="page-article">
+        <div class="page-article-title">New Order</div>
+        <form action="/dash/" method="POST">
+           <input class="plain-input" type="checkbox" name="cashout" checked/>auto cash-out at:
+            <input class="plain-input" name="cashout_amount" value="" placeholder="number of lentils">
+            <hr/>
+            <input type="radio" name="unit" value="lentils">get<input class="plain-input" name="cashout" value="" placeholder="amount of lentils">lentils
+            <br>OR<br/>
+            <input type="radio" name="unit" value="usd">spend<input class="plain-input" name="cashout" value="" placeholder="amount of money">
+            <br/>per 
+            <select class="plain-input">
+                <option value="hour">hour</option>
+                <option value="day" selected="selected">day</option>
+                <option value="month">month</option>
+                <option value="year">year</option>
+            </select>
+            <hr/>
+            ship to:
+            <select class="plain-input">
+                <option value="address1">address1</option>
+                <option value="address2">address2</option>
+                <option value="address3">address3</option>
+            </select>
+            <hr/>
+            pay with:
+            <select class="plain-input">
+                <option value="payment1">payment1</option>
+                <option value="payment2">payment1</option>
+                <option value="payment3">payment1</option>
+            </select>
+            <hr/>
+            <input class="plain-input" type="submit" value="next">
+        </form>
+    </div>
+     <div class="page-article">
+        <div class="page-article-title">Account</div>
+    </div>
 </body>
 </html>
